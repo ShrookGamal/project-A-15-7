@@ -1455,3 +1455,21 @@ body.menu-open > *:not(header) {
         transform: none !important; 
     }
 }
+@media (max-width: 768px) {
+    .portfolio-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 35px !important; 
+        padding: 20px 5% !important;
+    }
+
+    .portfolio-item {
+        display: block !important;
+        width: 100% !important;
+        height: 350px !important;
+        margin-bottom: 5px;
+    }
+    .portfolio-item.hide {
+        display: none !important;
+    }
+}

@@ -50,8 +50,7 @@ window.addEventListener('scroll', () => {
 
     if (expSection) {
         const sectionPos = expSection.getBoundingClientRect().top;
-        const screenPos = window.innerHeight / 1.3;
-        if (sectionPos < screenPos && !counterStarted) {
+        if (sectionPos < window.innerHeight / 1.3 && !counterStarted) {
             startCounters();
             counterStarted = true;
         }
@@ -155,11 +154,9 @@ filterButtons.forEach(btn => {
         btn.classList.add('active');
         const filterValue = btn.getAttribute('data-filter');
         portfolioItems.forEach(item => {
-            item.style.display = "block";
             if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
                 item.classList.remove('hide');
                 item.classList.add('show');
-                item.style.opacity = "1";
             } else {
                 item.classList.remove('show');
                 item.classList.add('hide');
@@ -171,28 +168,12 @@ filterButtons.forEach(btn => {
 allVideos.forEach(video => {
     video.addEventListener('mouseenter', () => video.play());
     video.addEventListener('mouseleave', () => video.pause());
-    video.addEventListener('click', () => {
-        if (video.paused) video.play();
-        else video.pause();
-    });
-});
-
-excellenceCards.forEach(card => {
-    card.style.opacity = "0";
-    card.style.transform = "translateY(50px) scale(0.9)";
-    card.style.transition = "all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275)";
-});
-
-contactCards.forEach(card => {
-    card.style.opacity = "0";
-    card.style.transform = "translateY(50px)";
-    card.style.transition = "all 1s ease-out";
+    video.addEventListener('click', () => video.paused ? video.play() : video.pause());
 });
 
 window.addEventListener('load', () => {
     portfolioItems.forEach(item => {
-        item.style.display = 'block';
-        item.style.opacity = '1';
+        item.classList.add('show');
     });
     updateActiveSection();
 });
