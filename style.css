@@ -1,7 +1,7 @@
 :root {
-    --primary: #5142a2; /* بنفسجي ملكي هادئ */
-    --secondary: #00d2ff; /* أزرق سماوي للمستقبل */
-    --accent: #ff007a; /* الأكسنت الزهري */
+    --primary: #5142a2; 
+    --secondary: #00d2ff; 
+    --accent: #ff007a; 
     --glass: rgba(255, 255, 255, 0.15);
     --glass-border: rgba(255, 255, 255, 0.3);
     --text-dark: #2d3436;
@@ -20,8 +20,6 @@ body {
     color: var(--text-dark);
     overflow-x: hidden;
 }
-
-/* Header & Navigation */
 header {
     position: fixed;
     top: 0;
@@ -54,7 +52,7 @@ header {
     width: 45px;
     height: 45px;
     border-radius: 12px;
-    background: var(--primary); /* ستايل افتراضي للوجو */
+    background: var(--primary); 
     box-shadow: 0 0 15px var(--secondary);
 }
 
@@ -105,15 +103,13 @@ header {
     transform: scale(1.05);
     box-shadow: 0 5px 20px var(--secondary);
 }
-
-/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #d9e5f7 0%, #f5b9e1 100%);
     overflow: hidden;
 }
 
@@ -159,13 +155,10 @@ header {
 
 .btn-primary { background: var(--primary); color: white; }
 .btn-secondary { background: white; color: var(--primary); border: 2px solid var(--primary); }
-
-/* Animations */
 @keyframes zoomInOut {
     0% { transform: scale(1); }
     100% { transform: scale(1.03); }
 }
-
 .animated-bg .shape {
     position: absolute;
     font-size: 3rem;
@@ -173,18 +166,14 @@ header {
     opacity: 0.2;
     animation: float 10s infinite linear;
 }
-
 @keyframes float {
     0% { transform: translateY(0) rotate(0deg); }
     100% { transform: translateY(-100vh) rotate(360deg); }
 }
-
 .shape-1 { top: 80%; left: 10%; animation-duration: 15s; }
 .shape-2 { top: 70%; left: 80%; animation-duration: 12s; color: var(--accent); }
 .shape-3 { top: 90%; left: 40%; animation-duration: 18s; }
 .shape-4 { top: 60%; left: 20%; animation-duration: 14s; color: var(--primary); }
-
-/* Floating Arrow */
 .floating-arrow {
     position: fixed;
     bottom: 30px;
@@ -202,10 +191,7 @@ header {
     color: var(--primary);
     transition: var(--transition);
 }
-
 .floating-arrow.down { transform: rotate(180deg); }
-
-/* Mobile Side Menu Style */
 .mobile-menu {
     position: fixed;
     top: -100%;
@@ -219,9 +205,7 @@ header {
     transition: 0.5s ease;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
-
 .mobile-menu.active { top: 100px; }
-
 .mobile-nav-links {
     list-style: none;
     text-align: center;
@@ -249,8 +233,6 @@ header {
     background: var(--primary);
     border-radius: 3px;
 }
-
-/* Responsiveness */
 @media (max-width: 768px) {
     header { padding: 15px 20px; }
     .nav-links, .call-btn.desktop-only { display: none; }
@@ -258,7 +240,6 @@ header {
     .hero-title { font-size: 2rem; }
     .navbar { padding: 10px 20px; }
 }
-/* تغيير الخط للناف بار واللوجو */
 .nav-item, .brand-name {
     font-family: 'Amiri', serif !important;
     font-size: 1.2rem;
@@ -277,16 +258,16 @@ header {
     opacity: 0.8;
 }
 .hero-content {
-    margin-top: 80px; /* زيادة المسافة من الأعلى لتنزيل البوكس */
+    margin-top: 80px; 
 }
 .floating-arrow {
-    left: auto; /* إلغاء التموضع القديم */
-    right: 30px; /* نقله لليمين */
-    background: linear-gradient(135deg, var(--accent), var(--primary)); /* لون مميز */
+    left: auto; 
+    right: 30px; 
+    background: linear-gradient(135deg, var(--accent), var(--primary)); 
     color: white;
     width: 55px;
     height: 55px;
-    border-radius: 15px; /* شكل مربع زواياه ناعمة مثل الأيفون */
+    border-radius: 15px; 
     border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 10px 20px rgba(255, 0, 122, 0.3);
 }
@@ -295,7 +276,6 @@ header {
     transform: scale(1.1) translateY(-5px);
     box-shadow: 0 15px 25px rgba(255, 0, 122, 0.5);
 }
-/* سكشن خبرتنا */
 .experience-section {
     padding: 100px 5%;
     background: radial-gradient(circle at top right, #fdfbff, #f0f2f5);
@@ -356,8 +336,6 @@ header {
     color: var(--secondary);
     font-size: 1.4rem;
 }
-
-/* ستايل البطاقات الزجاجية */
 .experience-stats-side {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -407,8 +385,6 @@ header {
 
 .secondary-icon { background: var(--secondary); box-shadow: 0 10px 20px rgba(0, 210, 255, 0.2); }
 .accent-icon { background: var(--accent); box-shadow: 0 10px 20px rgba(255, 0, 122, 0.2); }
-
-/* الأنميشن الخاص بالبطاقات */
 @keyframes floatAnim {
     0% { transform: translateY(0px); }
     100% { transform: translateY(-20px); }
@@ -426,8 +402,6 @@ header {
 .pulse-animation {
     animation: pulseAnim 4s infinite alternate ease-in-out;
 }
-
-/* استجابة الموبايل */
 @media (max-width: 992px) {
     .experience-grid {
         grid-template-columns: 1fr;
@@ -440,20 +414,12 @@ header {
 @media (max-width: 500px) {
     .experience-stats-side { grid-template-columns: 1fr; }
 }
-/* ============================================================
-   سكشن الخدمات - النسخة المظلمة الفاخرة (رؤية المستقبل)
-   الألوان: خلفية ليلية عميقة | كروت نيون زجاجية | أنميشن مكثف
-   ============================================================ */
-
 .services-refined {
     padding: 150px 0;
-    /* خلفية داكنة جداً وفخمة لخدمة التباين العالي */
     background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1a 100%);
     position: relative;
     overflow: hidden;
 }
-
-/* إضافة جزيئات متحركة في الخلفية (اختياري عبر CSS) */
 .services-refined::before {
     content: "";
     position: absolute;
@@ -464,8 +430,6 @@ header {
     opacity: 0.05;
     top: 0; left: 0;
 }
-
-/* الهيدر الرئيسي */
 .refined-header {
     text-align: center;
     margin-bottom: 100px;
@@ -481,7 +445,7 @@ header {
     font-size: 1.1rem;
     margin-bottom: 20px;
     display: block;
-    animation: pulseGlow 2s infinite; /* نبض للتاغ العلوي */
+    animation: pulseGlow 2s infinite;
 }
 
 @keyframes pulseGlow {
@@ -493,7 +457,7 @@ header {
 .amiri-title {
     font-family: 'Amiri', serif !important;
     font-size: 4.5rem;
-    color: #ffffff; /* أبيض ناصع على الخلفية الداكنة */
+    color: #ffffff; 
     margin-bottom: 20px;
     line-height: 1.1;
     text-shadow: 2px 4px 10px rgba(0,0,0,0.5);
@@ -512,8 +476,6 @@ header {
     max-width: 850px;
     margin: 0 auto;
 }
-
-/* شبكة الكروت: 2 في كل سطر */
 .services-modern-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -522,10 +484,8 @@ header {
     position: relative;
     z-index: 2;
 }
-
-/* تصميم الكارد الزجاجي المظلم (Ultra Glassmorphism) */
 .modern-card {
-    background: rgba(255, 255, 255, 0.03); /* شفافية عميقة */
+    background: rgba(255, 255, 255, 0.03); 
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -536,8 +496,6 @@ header {
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
-
-/* تأثير الإضاءة المتحركة عند الوقوف على الكارد */
 .modern-card::after {
     content: "";
     position: absolute;
@@ -558,8 +516,6 @@ header {
 .modern-card:hover::after {
     opacity: 1;
 }
-
-/* الصف العلوي: الأيقونة والرقم */
 .card-top-row {
     display: flex;
     justify-content: space-between;
@@ -580,7 +536,7 @@ header {
     box-shadow: 0 10px 30px rgba(81, 66, 162, 0.5);
     position: relative;
     z-index: 1;
-    animation: orbit 4s infinite linear; /* أنميشن دوران خفيف */
+    animation: orbit 4s infinite linear; 
 }
 
 @keyframes orbit {
@@ -608,8 +564,6 @@ header {
     transform: translateX(-20px) scale(1.2);
     color: var(--secondary);
 }
-
-/* نصوص الكارد */
 .amiri-card-title {
     font-family: 'Amiri', serif !important;
     font-size: 2.5rem;
@@ -640,8 +594,6 @@ header {
     margin-bottom: 40px;
     text-align: justify;
 }
-
-/* المميزات السفلية */
 .card-features {
     display: flex;
     gap: 30px;
@@ -668,15 +620,11 @@ header {
     0%, 100% { opacity: 1; filter: drop-shadow(0 0 2px var(--accent)); }
     50% { opacity: 0.5; filter: drop-shadow(0 0 10px var(--accent)); }
 }
-
-/* الموبايل */
 @media (max-width: 992px) {
     .services-modern-grid { grid-template-columns: 1fr; padding: 0 5%; }
     .amiri-title { font-size: 3rem; }
     .modern-card { padding: 40px; border-radius: 30px; }
 }
-
-/* أنميشن الظهور (Scroll Reveal) */
 .modern-card {
     opacity: 0;
     transform: translateY(100px) rotateX(15deg);
@@ -687,10 +635,9 @@ header {
     opacity: 1;
     transform: translateY(0) rotateX(0);
 }
-/* سكشن أعمالنا */
 .portfolio-section {
     padding: 100px 0;
-    background: #fdfdfd; /* لون فاتح وجميل */
+    background: #fdfdfd; 
     position: relative;
 }
 
@@ -711,10 +658,7 @@ header {
     color: var(--primary);
     margin-bottom: 30px;
 }
-
 .accent-text { color: var(--accent); }
-
-/* أزرار الفلترة */
 .filter-wrapper {
     display: flex;
     justify-content: center;
@@ -739,8 +683,6 @@ header {
     color: white;
     box-shadow: 0 10px 20px rgba(81, 66, 162, 0.2);
 }
-
-/* شبكة الصور والفيديوهات */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -754,7 +696,7 @@ header {
     background: white;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    height: 350px; /* توحيد الارتفاع */
+    height: 350px; 
 }
 
 .portfolio-item:hover {
@@ -771,16 +713,12 @@ header {
 .media-container img, .media-container video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* جعل الصور والفيديوهات تملأ الكارد */
+    object-fit: cover; 
     transition: 0.5s;
 }
-
-/* تنسيق الفيديوهات بشكل خاص */
 .video-item video {
     background: #000;
 }
-
-/* أنميشن الاختفاء والظهور عند الفلترة */
 .portfolio-item.hide {
     display: none;
 }
@@ -793,22 +731,17 @@ header {
     from { opacity: 0; transform: scale(0.8); }
     to { opacity: 1; transform: scale(1); }
 }
-
-/* الموبايل */
 @media (max-width: 768px) {
     .main-title { font-size: 2.5rem; }
     .filter-wrapper { flex-wrap: wrap; }
     .portfolio-grid { grid-template-columns: 1fr; }
 }
-/* --- الألوان العامة للهوية --- */
 :root {
     --primary: #5142a2;
     --secondary: #00d2ff;
     --accent: #ff007a;
-    --nav-bg: rgba(255, 255, 255, 0.95); /* أبيض كريستالي صلب للوضوح */
+    --nav-bg: rgba(255, 255, 255, 0.95); 
 }
-
-/* --- الهيدر (فاتح وواضح جداً) --- */
 header {
     position: fixed;
     top: 0;
@@ -817,9 +750,8 @@ header {
     padding: 15px 0;
     transition: 0.4s ease-in-out;
 }
-
 .navbar {
-    background: var(--nav-bg); /* خلفية فاتحة صلبة لضمان وضوح الكلام */
+    background: var(--nav-bg); 
     backdrop-filter: blur(10px);
     width: 92%;
     margin: 0 auto;
@@ -831,17 +763,13 @@ header {
     border: 1px solid rgba(81, 66, 162, 0.1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
-
-/* عند السكرول: الناف بار يصبح أكثر بياضاً وحدوداً */
 header.scrolled .navbar {
     background: #ffffff;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
     padding: 5px 30px;
 }
-
-/* --- نصوص الناف بار (بنفسجي غامق للوضوح) --- */
 .nav-item {
-    color: var(--primary) !important; /* لون داكن وواضح جداً فوق الخلفية الفاتحة */
+    color: var(--primary) !important; 
     font-family: 'Amiri', serif !important;
     font-size: 1.2rem;
     font-weight: 700;
@@ -854,7 +782,6 @@ header.scrolled .navbar {
 .nav-item.active {
     color: var(--accent) !important; 
 }
-
 .nav-item.active::before {
     content: '';
     position: absolute;
@@ -868,13 +795,10 @@ header.scrolled .navbar {
     box-shadow: 0 0 10px var(--accent), 0 0 20px var(--accent);
     animation: bounceActive 0.6s infinite alternate;
 }
-
 @keyframes bounceActive {
     from { bottom: 0px; transform: translateX(-50%) scale(1); }
     to { bottom: -5px; transform: translateX(-50%) scale(1.3); }
 }
-
-/* --- زر الاتصال (ديسكتوب فقط) --- */
 .call-btn {
     background: linear-gradient(45deg, var(--primary), var(--secondary));
     color: white !important;
@@ -886,15 +810,13 @@ header.scrolled .navbar {
     transition: 0.3s;
 }
 .call-btn:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(81, 66, 162, 0.4); }
-
-/* --- منيو الموبايل (حل جذري: أبيض صلب، خطوط واضحة) --- */
 .mobile-menu {
     position: fixed;
     top: -100%;
     left: 50%;
     transform: translateX(-50%);
     width: 85%;
-    background: #ffffff !important; /* أبيض صلب 100% */
+    background: #ffffff !important; 
     border: 2px solid var(--primary);
     border-radius: 30px;
     padding: 25px;
@@ -902,11 +824,9 @@ header.scrolled .navbar {
     box-shadow: 0 20px 60px rgba(0,0,0,0.2);
     transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
-.mobile-menu.active { top: 90px; } /* تظهر تحت الناف بار مباشرة */
-
+.mobile-menu.active { top: 90px; } 
 .mobile-nav-links a {
-    color: var(--primary) !important; /* نص داكن وواضح جداً */
+    color: var(--primary) !important; 
     font-family: 'Amiri', serif !important;
     font-size: 1.5rem;
     font-weight: 900;
@@ -915,31 +835,25 @@ header.scrolled .navbar {
     padding: 12px;
     text-decoration: none;
 }
-
 .mobile-nav-links a.active {
     color: var(--accent) !important;
     background: rgba(255, 0, 122, 0.05);
     border-radius: 15px;
 }
-
-/* زر الهامبرجر (البنفسجي) */
 .menu-toggle span {
-    background: var(--primary) !important; /* واضح جداً */
+    background: var(--primary) !important; 
     height: 3px;
     width: 30px;
     margin: 5px 0;
     display: block;
     border-radius: 3px;
 }
-
-/* إخفاء زر الاتصال في الموبايل */
 @media (max-width: 768px) {
     .call-btn.desktop-only { display: none; }
 }
-/* سكشن تميزنا */
 .excellence-section {
     padding: 120px 0;
-    background: radial-gradient(circle at center, #1a1a2e 0%, #0a0a14 100%); /* خلفية داكنة فخمة */
+    background: radial-gradient(circle at center, #1a1a2e 0%, #0a0a14 100%); 
     position: relative;
     overflow: hidden;
 }
@@ -968,16 +882,12 @@ header.scrolled .navbar {
     margin: 15px auto;
     font-size: 1.2rem;
 }
-
-/* الشبكة */
 .excellence-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(280px, 1fr));
     gap: 30px;
     padding: 0 5%;
 }
-
-/* الكارد النيوني */
 .excellence-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -995,8 +905,6 @@ header.scrolled .navbar {
     border-color: var(--secondary);
     box-shadow: 0 20px 40px rgba(0, 210, 255, 0.2);
 }
-
-/* الأيقونات والأنميشن */
 .icon-box {
     width: 90px;
     height: 90px;
@@ -1011,12 +919,9 @@ header.scrolled .navbar {
     position: relative;
     z-index: 2;
 }
-
 .secondary-bg { background: var(--secondary); }
 .accent-bg { background: var(--accent); }
 .mixed-bg { background: linear-gradient(45deg, var(--primary), var(--secondary)); }
-
-/* أنميشن الحلقات النابضة */
 .pulse-ring {
     position: absolute;
     top: 0; left: 0;
@@ -1044,8 +949,6 @@ header.scrolled .navbar {
     line-height: 1.8;
     font-size: 1.05rem;
 }
-
-/* حركة عائمة خلف الكروت */
 .excellence-section::before {
     content: '';
     position: absolute;
@@ -1055,44 +958,31 @@ header.scrolled .navbar {
     filter: blur(150px);
     opacity: 0.2;
 }
-
-/* الموبايل */
 @media (max-width: 768px) {
     .excellence-section .main-title { font-size: 2.5rem; }
     .excellence-card { padding: 30px 20px; }
 }
-/* --- تعديل رصة الكروت لتصبح معمارية غير متماثلة --- */
 .excellence-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* عمودين فقط */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 40px;
     padding: 50px 10%;
     position: relative;
     align-items: center;
 }
-
-/* الكارد الأول (إزاحة لليمين قليلاً) */
 .excellence-card:nth-child(1) {
     transform: translateY(-20px);
     z-index: 2;
 }
-
-/* الكارد الثاني (إزاحة للأسفل لكسر التماثل) */
 .excellence-card:nth-child(2) {
     transform: translateY(60px);
 }
-
-/* الكارد الثالث (إزاحة للأعلى وتداخل بسيط) */
 .excellence-card:nth-child(3) {
     transform: translateY(-40px) translateX(20px);
 }
-
-/* الكارد الرابع (إزاحة للأسفل واليسار) */
 .excellence-card:nth-child(4) {
     transform: translateY(40px) translateX(-20px);
 }
-
-/* إضافة لمسة جمالية خلف الكروت (دوائر ضوئية) */
 .excellence-grid::before {
     content: '';
     position: absolute;
@@ -1104,49 +994,40 @@ header.scrolled .navbar {
     background: radial-gradient(circle, rgba(0, 210, 255, 0.05) 0%, transparent 70%);
     z-index: 0;
 }
-
-/* ستايل الكارد المحسن ليناسب الرصة الجديدة */
 .excellence-card {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(20px);
-    border-radius: 40px 10px 40px 10px; /* زوايا غير منتظمة لإعطاء شكل عصري */
+    border-radius: 40px 10px 40px 10px; 
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 40px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-
 .excellence-card:hover {
     z-index: 10;
-    transform: scale(1.05) translateY(-10px) !important; /* إلغاء الإزاحة عند الهوفر */
+    transform: scale(1.05) translateY(-10px) !important; 
     border-color: var(--secondary);
     box-shadow: 0 30px 60px rgba(0, 210, 255, 0.2);
-    border-radius: 20px 40px 20px 40px; /* تعكس الزوايا عند الهوفر لإعطاء انميشن حركي */
+    border-radius: 20px 40px 20px 40px; 
 }
-
-/* ضبط الموبايل ليعود لشكل مرتب ولكن جذاب */
 @media (max-width: 992px) {
     .excellence-grid {
-        grid-template-columns: 1fr; /* عمود واحد في الموبايل */
+        grid-template-columns: 1fr; 
         padding: 20px;
         gap: 30px;
     }
-    
     .excellence-card:nth-child(n) {
-        transform: none !important; /* إلغاء الإزاحات في الموبايل لضمان عدم خروج العناصر عن الشاشة */
+        transform: none !important; 
         border-radius: 30px;
     }
 }
-/* سكشن المدونة */
 .blog-section { padding: 100px 20px; background: #fff; }
-
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 0 5%;
 }
-
 .blog-card {
     background: #ffffff;
     border-radius: 25px;
@@ -1155,13 +1036,10 @@ header.scrolled .navbar {
     transition: 0.4s;
     border: 1px solid #f0f0f0;
 }
-
 .blog-card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(81, 66, 162, 0.1); }
-
 .blog-img { position: relative; height: 250px; overflow: hidden; }
 .blog-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
 .blog-card:hover .blog-img img { scale: 1.1; }
-
 .blog-date {
     position: absolute;
     bottom: 15px;
@@ -1173,11 +1051,9 @@ header.scrolled .navbar {
     font-size: 0.8rem;
     font-weight: bold;
 }
-
 .blog-content { padding: 25px; }
 .blog-content h3 { font-size: 1.5rem; color: var(--primary); margin-bottom: 15px; }
 .blog-content p { color: #666; font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px; }
-
 .read-more-btn {
     color: var(--accent);
     text-decoration: none;
@@ -1188,50 +1064,39 @@ header.scrolled .navbar {
     transition: 0.3s;
 }
 .read-more-btn:hover { gap: 20px; }
-
 @media (max-width: 992px) { .blog-grid { grid-template-columns: 1fr; } }
-/* --- تعديلات سكشن المدونة --- */
-
 .blog-section {
-    padding: 100px 10%; /* إضافة بادينج كبير من الجنبين (10%) لضمان تنظيم المحتوى في المنتصف */
+    padding: 100px 10%; 
     background: #f0efef;
 }
-
 .section-header {
-    text-align: center; /* توسيط العنوان والكلام في بداية السكشن */
+    text-align: center; 
     margin-bottom: 60px;
     width: 100%;
 }
-
 .section-header .top-tag {
     display: block;
     text-align: center;
     margin-bottom: 10px;
 }
-
 .blog-section .amiri-font {
-    font-family: 'Amiri', serif !important; /* تطبيق الخط الإيميري */
+    font-family: 'Amiri', serif !important;
     text-align: center;
 }
-
 .blog-section .main-title {
     font-size: 3.5rem;
     color: var(--primary);
     margin: 0 auto;
     display: block;
 }
-
-/* لضمان توسيط الكلام في الشاشات الصغيرة أيضاً */
 @media (max-width: 768px) {
     .blog-section {
-        padding: 80px 5%; /* تقليل البادينج قليلاً للموبايل */
+        padding: 80px 5%;
     }
-    
     .blog-section .main-title {
         font-size: 2.5rem;
     }
 }
-/* سكشن تواصل معنا */
 .contact-section {
     position: relative;
     padding: 150px 0;
@@ -1239,31 +1104,26 @@ header.scrolled .navbar {
     color: white;
     text-align: center;
 }
-
-/* خلفية الصورة مع البلور */
 .contact-bg-overlay {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-image: url('images/bg.jpg'); /* ضعي صورة للرياض هنا */
-    background-attachment: fixed; /* تأثير بارالاكس */
+    background-image: url('images/bg.jpg');
+    background-attachment: fixed; 
     background-size: cover;
     background-position: center;
-    filter: blur(8px) brightness(0.6); /* البلور المطلوب وتعتيم خفيف للوضوح */
+    filter: blur(8px) brightness(0.6); 
     z-index: -1;
-    transform: scale(1.1); /* لمنع حواف البلور البيضاء */
+    transform: scale(1.1);
 }
-
 .contact-header {
     margin-bottom: 60px;
 }
-
 .contact-header .main-title {
     font-size: 3.5rem;
     color: #ffffff;
     text-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
-
 .address-text {
     font-size: 1.5rem;
     color: var(--secondary);
@@ -1271,8 +1131,6 @@ header.scrolled .navbar {
     margin-top: 10px;
     font-family: 'Cairo', sans-serif;
 }
-
-/* الكروت الزجاجية V3 */
 .contact-grid {
     display: flex;
     justify-content: center;
@@ -1280,7 +1138,6 @@ header.scrolled .navbar {
     padding: 0 5%;
     flex-wrap: wrap;
 }
-
 .glass-card-v3 {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
@@ -1292,14 +1149,11 @@ header.scrolled .navbar {
     transition: all 0.5s ease;
     box-shadow: 0 25px 50px rgba(0,0,0,0.2);
 }
-
 .glass-card-v3:hover {
     transform: translateY(-15px);
     background: rgba(255, 255, 255, 0.15);
     border-color: var(--secondary);
 }
-
-/* الأيقونات */
 .contact-icon {
     width: 90px;
     height: 90px;
@@ -1311,22 +1165,18 @@ header.scrolled .navbar {
     margin: 0 auto 25px;
     background: white;
 }
-
 .call-icon { color: var(--primary); box-shadow: 0 0 20px rgba(81, 66, 162, 0.4); }
 .wa-icon { color: #25D366; box-shadow: 0 0 20px rgba(37, 211, 102, 0.4); }
-
 .contact-card h3 {
     font-size: 2.2rem;
     margin-bottom: 15px;
 }
-
 .contact-card p {
     font-size: 1rem;
     line-height: 1.6;
     color: #e0e0e0;
     margin-bottom: 25px;
 }
-
 .contact-link {
     display: block;
     font-size: 1.8rem;
@@ -1334,10 +1184,8 @@ header.scrolled .navbar {
     color: #ffffff;
     text-decoration: none;
     margin-bottom: 30px;
-    direction: ltr; /* لضمان ظهور الرقم بشكل صحيح */
+    direction: ltr; 
 }
-
-/* أزرار الأكشن */
 .contact-btn {
     display: inline-block;
     padding: 15px 40px;
@@ -1347,29 +1195,23 @@ header.scrolled .navbar {
     color: white;
     transition: 0.3s;
 }
-
 .call-bg { background: linear-gradient(45deg, var(--primary), var(--secondary)); }
 .wa-bg { background: #25D366; }
-
 .contact-btn:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
-
-/* الموبايل */
 @media (max-width: 768px) {
     .glass-card-v3 { width: 100%; }
     .contact-header .main-title { font-size: 2.5rem; }
 }
-/* سكشن الفوتر */
 .main-footer {
-    background: #151033; /* بنفسجي داكن جداً وفخم */
+    background: #151033; 
     color: #ffffff;
     padding: 80px 0 20px;
     position: relative;
     border-top: 4px solid var(--secondary);
 }
-
 .footer-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
@@ -1377,17 +1219,14 @@ header.scrolled .navbar {
     padding: 0 5%;
     margin-bottom: 50px;
 }
-
 .footer-logo { font-size: 2.2rem; margin-bottom: 20px; }
 .footer-logo .highlight { color: var(--secondary); }
-
 .footer-desc {
     color: #b0b0b0;
     line-height: 1.8;
     font-size: 0.95rem;
     margin-bottom: 25px;
 }
-
 .footer-title {
     font-size: 1.3rem;
     color: var(--secondary);
@@ -1395,7 +1234,6 @@ header.scrolled .navbar {
     position: relative;
     padding-bottom: 10px;
 }
-
 .footer-title::after {
     content: '';
     position: absolute;
@@ -1403,38 +1241,30 @@ header.scrolled .navbar {
     width: 40px; height: 3px;
     background: var(--accent);
 }
-
 .footer-links, .contact-info {
     list-style: none;
     padding: 0;
 }
-
 .footer-links li, .contact-info li {
     margin-bottom: 15px;
     color: #d0d0d0;
     transition: 0.3s;
 }
-
 .footer-links li a {
     text-decoration: none;
     color: inherit;
     transition: 0.3s;
 }
-
 .footer-links li a:hover {
     color: var(--accent);
     padding-right: 10px;
 }
-
 .contact-info li i {
     color: var(--secondary);
     margin-left: 10px;
     width: 20px;
 }
-
 .ltr { direction: ltr; display: inline-block; }
-
-/* أيقونات التواصل */
 .social-icons { display: flex; gap: 15px; }
 .social-icons a {
     width: 40px; height: 40px;
@@ -1444,18 +1274,13 @@ header.scrolled .navbar {
     transition: 0.3s;
 }
 .social-icons a:hover { background: var(--accent); transform: translateY(-5px); }
-
-/* الجزء السفلي */
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 20px;
     text-align: center;
 }
-
 .copyright { font-size: 0.9rem; color: #888; margin-bottom: 10px; }
-
 .developer { font-size: 1rem; color: #fff; }
-
 .gmt-link {
     color: var(--secondary);
     text-decoration: none;
@@ -1463,13 +1288,10 @@ header.scrolled .navbar {
     border-bottom: 1px dashed var(--secondary);
     transition: 0.3s;
 }
-
 .gmt-link:hover {
     color: var(--accent);
     border-color: var(--accent);
 }
-
-/* الموبايل */
 @media (max-width: 992px) {
     .footer-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -1479,22 +1301,19 @@ header.scrolled .navbar {
     .footer-title::after { right: 50%; transform: translateX(50%); }
     .social-icons { justify-content: center; }
 }
-/* حاوية الأزرار العائمة */
 .floating-contact-wrap {
     position: fixed;
     bottom: 30px;
-    left: 30px; /* في الجهة المقابلة للسهم */
+    left: 30px; 
     display: flex;
     flex-direction: column;
     gap: 15px;
     z-index: 9999;
 }
-
-/* الاستايل العام للأزرار */
 .fab-btn {
     width: 60px;
     height: 60px;
-    border-radius: 20px; /* ستايل أيقونة الأيفون */
+    border-radius: 20px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1507,18 +1326,12 @@ header.scrolled .navbar {
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
-
-/* زر الواتساب */
 .whatsapp-fab {
     background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
 }
-
-/* زر الاتصال */
 .call-fab {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
 }
-
-/* أنميشن النبض للواتساب */
 .fab-ping {
     position: absolute;
     width: 100%;
@@ -1528,22 +1341,16 @@ header.scrolled .navbar {
     z-index: -1;
     animation: fabPing 2s infinite;
 }
-
 @keyframes fabPing {
     0% { transform: scale(1); opacity: 0.8; }
     100% { transform: scale(1.6); opacity: 0; }
 }
-
-/* تفاعل الهوفر */
 .fab-btn:hover {
     transform: scale(1.15) rotate(5deg);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
-
 .whatsapp-fab:hover { box-shadow: 0 0 20px #25D366; }
 .call-fab:hover { box-shadow: 0 0 20px var(--secondary); }
-
-/* الموبايل: تصغير الحجم قليلاً */
 @media (max-width: 768px) {
     .floating-contact-wrap {
         bottom: 20px;
@@ -1555,4 +1362,45 @@ header.scrolled .navbar {
         height: 50px;
         font-size: 1.5rem;
     }
+}
+@media (max-width: 768px) {
+    .hero-title, .main-title, .amiri-title {
+        font-size: 1.8rem !important;
+    }
+    .brand-name {
+        font-size: 1.1rem !important; 
+    }
+    .hero-text {
+        font-size: 0.9rem !important; 
+    }
+    .portfolio-grid {
+        display: grid !important; 
+        grid-template-columns: 1fr !important; 
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    .portfolio-item {
+        display: block !important;
+        opacity: 1 !important;
+        height: 300px !important;
+    }
+}
+.menu-toggle {
+    gap: 0.5px !important; 
+}
+.menu-toggle span {
+    transition: 0.3s;
+}
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+body.menu-open > *:not(header) {
+    filter: blur(8px); 
+    pointer-events: none; 
 }
