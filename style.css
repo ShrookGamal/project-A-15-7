@@ -1473,3 +1473,18 @@ body.menu-open > *:not(header) {
         display: none !important;
     }
 }
+.icon-shake {
+    display: inline-block;
+    margin-left: 8px;
+    animation: phone-ring 1.5s infinite ease-in-out;
+}
+
+@keyframes phone-ring {
+    0% { transform: rotate(0deg) scale(1); }
+    10% { transform: rotate(-25deg) scale(1.2); }
+    20% { transform: rotate(25deg) scale(1.2); }
+    30% { transform: rotate(-25deg) scale(1.2); }
+    40% { transform: rotate(25deg) scale(1.2); }
+    50% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(0deg) scale(1); }
+}
